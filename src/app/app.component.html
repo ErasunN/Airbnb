@@ -1,15 +1,17 @@
 <app-navbar></app-navbar>
-<h1>a</h1>
-<h1>a</h1>
-<h1>a</h1>
-<h1>a</h1>
-<h1>a</h1>
 
-<footer class="fixed-bottom">
+
+<footer class="sticky-bottom">
+    <div>
+        <fa-icon [icon]="['fab', 'airbnb']" class="box-icon"></fa-icon>
+    </div>
     <div class="copyright">
         <p>Copyright © 2021 Juan Cruz Navarro y Nicolas Erasun, todos los derechos reservados.</p>
     </div>
-    <fa-icon [icon]="['fas', 'angle-up']"></fa-icon>
-    <fa-icon [icon]="faCoffee"></fa-icon>
-    <i class="fas fa-angle-up"></i>
+    <div>
+        <fa-icon [icon]="['fas', 'angle-up']" (click)="GoUp()" class="box-icon"></fa-icon>
+    </div>
+
+
+
 </footer>
