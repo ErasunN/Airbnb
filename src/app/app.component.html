@@ -1,9 +1,9 @@
 <app-navbar></app-navbar>
+<router-outlet></router-outlet>
 
-
-<footer class="sticky-bottom">
+<footer class="fixed-bottom">
     <div>
-        <fa-icon [icon]="['fab', 'airbnb']" class="box-icon"></fa-icon>
+        <fa-icon [icon]="['fab', 'airbnb']" class="box-icon" [routerLink]="['/']"></fa-icon>
     </div>
     <div class="copyright">
         <p>Copyright © 2021 Juan Cruz Navarro y Nicolas Erasun, todos los derechos reservados.</p>
