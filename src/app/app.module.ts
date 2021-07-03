@@ -12,6 +12,7 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
 import { HomeComponent } from './home/home.component';
 import { DetalleComponent } from './detalle/detalle.component';
 import { BusquedaComponent } from './busqueda/busqueda.component';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { BusquedaComponent } from './busqueda/busqueda.component';
     NavbarComponent,
     HomeComponent,
     DetalleComponent,
-    BusquedaComponent
+    BusquedaComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,

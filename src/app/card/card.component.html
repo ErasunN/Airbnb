@@ -1,0 +1,22 @@
+<div class="unaCardtoaFea" class="card" [routerLink]="['../detalle']">
+
+    <img [src]="card.imagen" alt="">
+    <h1>{{card.titulo}}</h1>
+    <p>{{card.descripcion}}</p>
+    <span>Precio:{{card.precio}}</span>
+    <p>Valoracion:{{card.valoracion}}</p>
+    <p>Oferta:{{card.oferta}}</p>
+    <p>Tipo de card:{{card.tipo}}</p>
+</div>
+
+<div class="{{card2.tipo}}" class="card" [routerLink]="['../detalle']">
+
+    <img [src]="card.imagen" alt="">
+    <h1>{{card.titulo}}</h1>
+    <p>{{card.descripcion}}</p>
+    <span>Precio:{{card.precio}}</span>
+    <p>Valoracion:{{card.valoracion}}</p>
+
+
+    <p>Tipo de card:{{card2.tipo}}</p>
+</div>
