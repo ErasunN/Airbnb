@@ -4,6 +4,8 @@ footer {
     display: flex;
     justify-content: center;
     text-align: center;
+    justify-content: space-between;
+    // position: relative;
 }
 
 footer p {
@@ -19,6 +21,20 @@ footer p {
 }
 
 .copyright {
-    position: absolute;
+    // position: absolute;
     margin-top: 35px;
+}
+
+.box-icon {
+    font-size: 60px;
+    margin: 90px;
+}
+
+fa-icon {
+    cursor: pointer;
+    // font-size: 60px;
+    color: #E5FFCB;
+    // width: 50px;
+    // height: 40px;
+    // position: absolute;
 }
