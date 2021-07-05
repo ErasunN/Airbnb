@@ -1,48 +1,46 @@
 <nav class="navbar navbar-expand-lg back-nav">
     <div class="container-fluid">
-        <a class="navbar-brand item-nav" href="#">
-            <fa-icon [icon]="['fab', 'airbnb']"></fa-icon>
+        <a class="navbar-brand item-nav col-1 d-flex justify-content-center" href="#" [routerLink]="['/']">
+            <fa-icon class="box-icon" [icon]="['fab', 'airbnb']"></fa-icon>
         </a>
-        <button class="navbar-toggler item-nav" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <form class="d-flex">
-            <input class="form-control me-1" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn item-nav" type="submit">
-                <fa-icon [icon]="['fas', 'search']"></fa-icon>
-            </button>
-        </form>
-        <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
-            <ul class="navbar-nav mb-2 mb-lg-0">
-                <li class="nav-item item-nav">
-                    <a class="nav-link active" aria-current="page" href="#">Ser Anfitrion</a>
+        <app-search-bar class="col-4"></app-search-bar>
+        <div class="collapse navbar-collapse d-inline-flex justify-content-end col-7" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mx-3 mb-lg-0 d-flex justify-content-around w-75">
+                <li class="nav-item item-nav m-auto">
+                    <a class="nav-link active" aria-current="page" href="#" [routerLink]="['/']">
+                        Ser Anfitrion
+                        <fa-icon class="nav-icon" [icon]="['fas', 'plus-square']"></fa-icon>
+                    </a>
                 </li>
-                <li class="nav-item item-nav">
-                    <a class="nav-link active" aria-current="page" href="#">Ayuda</a>
+                <li class="nav-item item-nav m-auto">
+                    <a class="nav-link active" aria-current="page" href="#" [routerLink]="['/']">
+                        Ayuda
+                        <fa-icon class="nav-icon" [icon]="['fas', 'question-circle']"></fa-icon>
+                    </a>
                 </li>
-                <div class="d-flex" *ngIf=!userLogged>
-                    <li class="nav-item item-nav">
-                        <a class="nav-link active" aria-current="page" href="#">Registrarse</a>
-                    </li>
-                    <li class="nav-item item-nav">
-                        <a class="nav-link active" aria-current="page" href="#">Iniciar Sesion</a>
-                    </li>
-                </div>
-                <div class="d-flex" *ngIf=userLogged>
-                    <li class="nav-item dropdown item-nav">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Notificaciones
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Notif1</a></li>
-                            <li><a class="dropdown-item" href="#">Notif1</a></li>
-                            <li><a class="dropdown-item" href="#">Notif1</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item item-nav">
-                        <a class="nav-link active" aria-current="page" href="#">Perfil</a>
-                    </li>
-                </div>
+                <li class="nav-item item-nav item-deco m-auto" *ngIf=!userLogged>
+                    <a class="nav-link active bg-secondary rounded" aria-current="page" href="#">Registrarse</a>
+                </li>
+                <li class="nav-item item-nav item-deco m-auto" *ngIf=!userLogged>
+                    <a class="nav-link active bg-dark rounded" aria-current="page" href="#">Iniciar Sesion</a>
+                </li>
+                <li class="nav-item dropdown item-nav m-auto" *ngIf=userLogged>
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Notificaciones
+                        <fa-icon class="nav-icon" [icon]="['fas', 'bell']"></fa-icon>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" [routerLink]="['/']">Notif1</a></li>
+                        <li><a class="dropdown-item" [routerLink]="['/']">Notif1</a></li>
+                        <li><a class="dropdown-item" [routerLink]="['/']">Notif1</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item item-nav m-auto" *ngIf=userLogged>
+                    <a class="nav-link active" aria-current="page" [routerLink]="['/']">
+                        Perfil
+                        <fa-icon class="nav-icon" [icon]="['fas', 'user-circle']"></fa-icon>
+                    </a>
+                </li>
             </ul>
 
         </div>

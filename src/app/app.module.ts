@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +14,7 @@ import { HomeComponent } from './home/home.component';
 import { DetalleComponent } from './detalle/detalle.component';
 import { BusquedaComponent } from './busqueda/busqueda.component';
 import { CardComponent } from './card/card.component';
+import { SearchBarComponent } from './search-bar/search-bar.component';
 
 @NgModule({
   declarations: [
@@ -21,12 +23,14 @@ import { CardComponent } from './card/card.component';
     HomeComponent,
     DetalleComponent,
     BusquedaComponent,
-    CardComponent
+    CardComponent,
+    SearchBarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
