@@ -9,25 +9,22 @@ import { Card } from './Card';
 export class CardComponent implements OnInit {
 // posteriormente sera un arreglo de card's
   card: Card={
-  titulo:'el titulo',
+  titulo:'Mansion Playboy',
   descripcion:'la descripciosa descripcion',
-  precio: 999,
-  valoracion:4,
+  precio: 160,
+  valoracion:[true,true,false,false,false],
   imagen:'assets/ratatata.jpg',
   oferta:false,
   tipo:"card base"
   }
+  
 
-  card2: Card={
-    titulo:'el titulo',
-    descripcion:'la descripciosa descripcion',
-    precio: 999,
-    valoracion:4,
-    imagen:'assets/ratatata.jpg',
-    oferta:true,
-    tipo:"unaClasequevieneGuardadaComoAtributoTremendaideatodaguapaQuetuveLastimaQueSoyMedioAutista"
-    }
-  constructor() { }
+  
+  
+   
+  constructor() {
+   
+   }
 
   ngOnInit(): void {
   }

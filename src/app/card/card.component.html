@@ -1,22 +1,40 @@
-<div class="unaCardtoaFea" class="card" [routerLink]="['../detalle']">
+<div class="card" style="width:25rem; ">
+    <img [src]="card.imagen" alt="" class="card-img-top">
+    <div class="card-img-overlay d-flex justify-content-end">
+        <!-- <h5 class="heartCircle d-flex  my-auto">
+        </h5> -->
+        <div class="heartCircle">
+            <fa-icon [icon]="[ 'far', 'heart'] " class="heart text-center "></fa-icon>
 
-    <img [src]="card.imagen" alt="">
-    <h1>{{card.titulo}}</h1>
-    <p>{{card.descripcion}}</p>
-    <span>Precio:{{card.precio}}</span>
-    <p>Valoracion:{{card.valoracion}}</p>
-    <p>Oferta:{{card.oferta}}</p>
-    <p>Tipo de card:{{card.tipo}}</p>
-</div>
-
-<div class="{{card2.tipo}}" class="card" [routerLink]="['../detalle']">
-
-    <img [src]="card.imagen" alt="">
-    <h1>{{card.titulo}}</h1>
-    <p>{{card.descripcion}}</p>
-    <span>Precio:{{card.precio}}</span>
-    <p>Valoracion:{{card.valoracion}}</p>
+        </div>
 
 
-    <p>Tipo de card:{{card2.tipo}}</p>
+    </div>
+    <div class="card-body pt-0 pb-0 mb-0">
+        <div class="row">
+            <div class="col-10">
+                <h5 class=" card-title mt-2 ">{{card.titulo}}</h5>
+            </div>
+            <div class="col-2 d-flex justify-content-center text-center my-auto">
+                <!-- <fa-icon [icon]="[ 'far', 'heart'] " class="heart"></fa-icon> -->
+            </div>
+        </div>
+        <div class="mt-0 mb-2 row ">
+            <div class=" d-flex col-6  my-auto">
+                <div *ngFor="let star of card.valoracion ">
+                    <fa-icon [icon]="[ 'fas', 'star'] " *ngIf="star==true " class="star"></fa-icon>
+                    <fa-icon [icon]="[ 'far', 'star'] " *ngIf="star==false " class="star"></fa-icon>
+                </div>
+            </div>
+            <div class="col-6 mb-0 pb-0 my-auto">
+                <div class=" d-flex justify-content-end">
+                    <!-- <span class=" text-end my-auto"> noche</span> -->
+                    <h4 class=" text-end my-auto price ">{{card.precio|currency}} </h4>
+                    <span class=" text-end my-auto">/noche</span>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
 </div>

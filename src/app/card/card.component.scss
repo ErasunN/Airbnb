@@ -1,19 +1,50 @@
-.unaCardtoaFea {
-    width: 400px !important;
-    // height: 50px !important;
-    background-color: rgb(31, 169, 233);
-    // position: relative;
+.card {
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.heartCircle {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: #FFFFFF;
 }
 
 img {
     cursor: pointer;
-    // position: absolute;
-    // width: 100% !important;
-    // height: 20% !important;
 }
 
-.unaClasequevieneGuardadaComoAtributoTremendaideatodaguapaQuetuveLastimaQueSoyMedioAutista {
-    color: rgb(255, 0, 0);
-    background-color: blue !important;
-    width: 400px !important;
+.price {
+    color: #1F5754;
+}
+
+.cora {
+    background-color: white;
+    height: 30px;
+    width: 30px;
+}
+
+.heart {
+    margin-top: 2px;
+    font-size: 30px;
+    color: #FD3F3F;
+    // background-color: white;
+}
+
+.heart * {
+    vertical-align: auto!important;
+}
+
+.card-img-top {
+    height: 17rem;
+    object-fit: cover;
+}
+
+.star {
+    color: #EA9A00;
 }
