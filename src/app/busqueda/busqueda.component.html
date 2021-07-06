@@ -1,3 +1,7 @@
-<div *ngFor="let lugar of lugares">
-    <app-card [lugar]="lugar"></app-card>
+<div class="container">
+
+    <div *ngFor="let lugar of lugares">
+        <!-- <app-card [lugar]="lugar"></app-card> -->
+        <app-card-producto-busqueda [lugar]="lugar"></app-card-producto-busqueda>
+    </div>
 </div>

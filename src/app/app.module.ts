@@ -15,6 +15,8 @@ import { DetalleComponent } from './detalle/detalle.component';
 import { BusquedaComponent } from './busqueda/busqueda.component';
 import { CardComponent } from './card/card.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
+import { CardLugaresInteresComponent } from './card-lugares-interes/card-lugares-interes.component';
+import { CardProductoBusquedaComponent } from './card-producto-busqueda/card-producto-busqueda.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
     DetalleComponent,
     BusquedaComponent,
     CardComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    CardLugaresInteresComponent,
+    CardProductoBusquedaComponent
   ],
   imports: [
     BrowserModule,
