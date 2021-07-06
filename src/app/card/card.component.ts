@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { Card } from './Card';
+import { Component, Input, OnInit } from '@angular/core';
+import { Espacio } from '../Espacios';
 
 @Component({
   selector: 'app-card',
@@ -8,7 +8,7 @@ import { Card } from './Card';
 })
 export class CardComponent implements OnInit {
 // posteriormente sera un arreglo de card's
-  card: Card={
+  /* card: Espacio={
   titulo:'Mansion Playboy',
   descripcion:'la descripciosa descripcion',
   precio: 160,
@@ -16,15 +16,21 @@ export class CardComponent implements OnInit {
   imagen:'assets/ratatata.jpg',
   oferta:false,
   tipo:"card base"
-  }
+  } */
   
-
+  @Input()
+  lugar: Espacio = {
+    titulo: '',
+    descripcion: '',
+    precio: 0,
+    valoracion: [],
+    imagen: '',
+    oferta: false,
+    tipo: ''
+  };
   
-  
-   
   constructor() {
-   
-   }
+  }
 
   ngOnInit(): void {
   }

@@ -1,4 +1,4 @@
-export interface Card{
+export interface Espacio{
     titulo: string;
     descripcion:string;
     precio:number;
@@ -7,5 +7,4 @@ export interface Card{
     oferta:boolean;
     // coso para separar la cosa 
     tipo:string;//la cosa
-
 }

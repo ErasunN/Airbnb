@@ -1,6 +1,6 @@
 <form class="d-flex">
     <input class="form-control me-1" type="search" placeholder="Search" aria-label="Search" [ngModel]="input_busqueda" (ngModelChange)="changeInput($event)" name="input_busqueda">
-    <button class="btn item-nav">
+    <button class="btn item-nav" (click)="search()" [routerLink]="['/busqueda']">
         <fa-icon class="nav-icon" [icon]=" [ 'fas', 'search']"></fa-icon>
     </button>
 </form>
