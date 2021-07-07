@@ -15,6 +15,7 @@ import { DetalleComponent } from './detalle/detalle.component';
 import { BusquedaComponent } from './busqueda/busqueda.component';
 import { CardComponent } from './card/card.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
+import { CarrouselComponent } from './carrousel/carrousel.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
     DetalleComponent,
     BusquedaComponent,
     CardComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    CarrouselComponent
   ],
   imports: [
     BrowserModule,

@@ -1,10 +1,27 @@
-<p> el home works!</p>
-<div class="container">
-    <div class="row d-flex">
-        <app-card></app-card>
-
-
-
+<div class="container-fluid">
+    <div class="row d-flex col-11 mx-auto">
+        <app-carrousel class="my-2"></app-carrousel>
+        <div class="row row-cols-1 row-cols-md-3 d-inline-flex">
+        </div>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item col-3" [ngClass]="{'active' : i === 1}" *ngFor="let lugar of valorados; let i=index">
+                    <div class="d-flex justify-content-around">
+                        <app-card [lugar]="lugar[0]" class="mx-3"></app-card>
+                        <app-card [lugar]="lugar[1]" class="mx-3"></app-card>
+                        <app-card [lugar]="lugar[2]" class="mx-3"></app-card>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </div>
 
 </div>

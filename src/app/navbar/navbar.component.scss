@@ -18,3 +18,18 @@
 .box-icon {
     font-size: 40px;
 }
+
+.notification * {
+    color: #232F3E;
+}
+
+.notif {
+    background-color: #EA9A00 !important;
+    padding: .4rem;
+}
+
+@media (max-width: 600px) {
+    #searchNav {
+        display: none;
+    }
+}

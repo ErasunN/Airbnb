@@ -3,9 +3,12 @@
         <a class="navbar-brand item-nav col-1 d-flex justify-content-center" href="#" [routerLink]="['/']">
             <fa-icon class="box-icon" [icon]="['fab', 'airbnb']"></fa-icon>
         </a>
-        <app-search-bar class="col-4"></app-search-bar>
-        <div class="collapse navbar-collapse d-inline-flex justify-content-end col-7" id="navbarSupportedContent">
-            <ul class="navbar-nav mb-2 mx-3 mb-lg-0 d-flex justify-content-around w-75">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse d-flex justify-content-between col-7" id="navbarSupportedContent">
+            <app-search-bar class="col-4" id="searchNav"></app-search-bar>
+            <ul class="navbar-nav mb-2 mx-3 mb-lg-0 d-flex justify-content-around col-6">
                 <li class="nav-item item-nav m-auto">
                     <a class="nav-link active" aria-current="page" href="#" [routerLink]="['/']">
                         Ser Anfitrion
@@ -28,11 +31,12 @@
                     <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Notificaciones
                         <fa-icon class="nav-icon" [icon]="['fas', 'bell']"></fa-icon>
+                        <span class="position-absolute top-25 start-100 translate-middle badge border border-light rounded-circle notif"><span class="visually-hidden">unread messages</span></span>
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" [routerLink]="['/']">Notif1</a></li>
-                        <li><a class="dropdown-item" [routerLink]="['/']">Notif1</a></li>
-                        <li><a class="dropdown-item" [routerLink]="['/']">Notif1</a></li>
+                    <ul class="dropdown-menu postion-relative" aria-labelledby="navbarDropdown">
+                        <li class="notification"><a class="dropdown-item" [routerLink]="['/']">¡No te olvides de reseñar "X"!</a></li>
+                        <li class="notification"><a class="dropdown-item" [routerLink]="['/']">5%OFF si valoras "Y".</a></li>
+                        <li class="notification"><a class="dropdown-item" [routerLink]="['/']">¡Mira esto para tu viaje!</a></li>
                     </ul>
                 </li>
                 <li class="nav-item item-nav m-auto" *ngIf=userLogged>
