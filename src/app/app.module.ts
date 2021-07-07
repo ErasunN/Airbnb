@@ -17,6 +17,7 @@ import { CardComponent } from './card/card.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { CardLugaresInteresComponent } from './card-lugares-interes/card-lugares-interes.component';
 import { CardProductoBusquedaComponent } from './card-producto-busqueda/card-producto-busqueda.component';
+import { CardAnfitrionComponent } from './card-anfitrion/card-anfitrion.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { CardProductoBusquedaComponent } from './card-producto-busqueda/card-pro
     CardComponent,
     SearchBarComponent,
     CardLugaresInteresComponent,
-    CardProductoBusquedaComponent
+    CardProductoBusquedaComponent,
+    CardAnfitrionComponent
   ],
   imports: [
     BrowserModule,

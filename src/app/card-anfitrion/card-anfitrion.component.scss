@@ -1,0 +1,65 @@
+.footer-anfitrion {
+    display: flex;
+    flex-direction: column;
+    // justify-content: end;
+    text-align: end;
+}
+
+.card {
+    background-color: #E5FFCB;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+h2 {
+    // font-family: Roboto;
+    // font-style: normal;
+    // font-weight: normal;
+    // font-size: 22px;
+    // line-height: 24px;
+    /* identical to box height, or 109% */
+    letter-spacing: -0.011em;
+    /* Texto sin importancia */
+    color: #6B6B6B;
+}
+
+h1 {
+    // font-family: Roboto;
+    // font-style: normal;
+    // font-weight: normal;
+    // font-size: 30px;
+    // line-height: 24px;
+    /* identical to box height, or 80% */
+    letter-spacing: -0.011em;
+    /* Texto titulo */
+    color: #262626;
+}
+
+.boton {
+    border: none;
+    width: 181px;
+    height: 64px;
+    filter: drop-shadow(1px 3px 4px rgba(0, 0, 0, 0.5));
+    background: #1F5754;
+    border-radius: 12px;
+    // font-family: Secular One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 24px;
+    /* identical to box height, or 109% */
+    text-align: center;
+    letter-spacing: -0.011em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card-body {
+    padding: 35px !important;
+}
