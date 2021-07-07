@@ -16,7 +16,7 @@ export class BusquedaComponent implements OnInit {
       precio: 26,
       valoracion: [true, true, false, false, false],
       imagen: "https://static1.sosiva451.com/8037839/767d218c-49c7-430a-a55d-63b1b1b71f18_u_small.jpg",
-      oferta: false,
+      oferta: true,
       tipo: "busqueda"
     },
     {

@@ -16,6 +16,9 @@ import { BusquedaComponent } from './busqueda/busqueda.component';
 import { CardComponent } from './card/card.component';
 import { SearchBarComponent } from './search-bar/search-bar.component';
 import { CarrouselComponent } from './carrousel/carrousel.component';
+import { CardLugaresInteresComponent } from './card-lugares-interes/card-lugares-interes.component';
+import { CardProductoBusquedaComponent } from './card-producto-busqueda/card-producto-busqueda.component';
+import { CardAnfitrionComponent } from './card-anfitrion/card-anfitrion.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import { CarrouselComponent } from './carrousel/carrousel.component';
     BusquedaComponent,
     CardComponent,
     SearchBarComponent,
-    CarrouselComponent
+    CarrouselComponent,
+    CardLugaresInteresComponent,
+    CardProductoBusquedaComponent,
+    CardAnfitrionComponent
   ],
   imports: [
     BrowserModule,

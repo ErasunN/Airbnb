@@ -1,8 +1,7 @@
 <div class="container-fluid">
     <div class="row d-flex col-11 mx-auto">
         <app-carrousel class="my-2"></app-carrousel>
-        <div class="row row-cols-1 row-cols-md-3 d-inline-flex">
-        </div>
+        <app-card-anfitrion></app-card-anfitrion>
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item col-3" [ngClass]="{'active' : i === 1}" *ngFor="let lugar of valorados; let i=index">

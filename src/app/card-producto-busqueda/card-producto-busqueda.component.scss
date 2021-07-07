@@ -1,0 +1,73 @@
+.card {
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.heartCircle {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    background-color: #FFFFFF;
+}
+
+.oferta {
+    // background-color: #316400;
+    background-color: #479400;
+    color: white;
+    // font-size: 20px;
+    // padding-right: 10px;
+    // transform: rotate(35deg);
+}
+
+.tachado {
+    text-decoration: line-through;
+}
+
+.ofertaSpan {
+    font-size: 20px;
+    background-color: #479400;
+    color: white;
+    padding: 1px 5px 1px 5px;
+    margin-right: 5px;
+    // padding-right: 5px;
+    border-radius: 2px;
+}
+
+img {
+    cursor: pointer;
+}
+
+.price {
+    color: #1F5754;
+}
+
+.cora {
+    background-color: white;
+    height: 30px;
+    width: 30px;
+}
+
+.heart {
+    margin-top: 2px;
+    font-size: 25px;
+    color: #FD3F3F;
+    // background-color: white;
+}
+
+.heart * {
+    vertical-align: auto!important;
+}
+
+.card-img-top {
+    height: 17rem;
+    object-fit: cover;
+}
+
+.star {
+    color: #EA9A00;
+}
